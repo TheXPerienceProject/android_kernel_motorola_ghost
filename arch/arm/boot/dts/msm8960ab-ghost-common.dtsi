@@ -124,3 +124,13 @@
 		overdrive_voltage = <0x89>; /* 3.0v */
 	};
 };
+
+&firmware {
+	android {
+		fstab {
+			system {
+				dev = "/dev/block/platform/msm_sdcc.1/by-name/system";
+			};
+		};
+	};
+};
